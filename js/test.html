@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<ul>
+	<li>
+		<a href>
+			<img src="${res[i].pic}" />
+		</a>
+		<p>${res[i].price}</p>
+		<h1>
+			<a href>${res[i].pname}</a>
+		</h1>
+		<div>
+			<a href class="contrast">
+				<i></i>对比
+			</a>
+			<a href class="p-operate">
+				<i></i>关注
+			</a>
+			<a href class="addcart">
+				<i></i>加入购物车
+			</a>
+		</div>
+	</li>
+</ul>
+	<tr></tr>
+</body>
+</html>
+
+
+				<tr>
+                    <td>
+                        <input type="checkbox">
+                        <input type="hidden" value="${res[i].did}">
+                        <div><img src="" alt=""></div>
+                    </td>
+                    <td><a href="">${pname}</a></td>
+                    <td>${price}</td>
+                    <td>
+                        <button>-</button><input type="text" value="${res[i].count}"><button>+</button>
+                    </td>
+                    <td><span>${price*res[i].count}</span></td>
+                    <td><a href="">删除</a></td>
+                </tr>
